@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:DRV8881
 LIBS:Nucleo_DAQ_Shield-cache
 EELAYER 25 0
 EELAYER END
@@ -1410,7 +1411,7 @@ Text Label 4350 4600 2    30   ~ 0
 CUI_encoder_B
 Text Label 4450 4350 0    30   ~ 0
 ENCODER_B
-Text Notes 6100 1950 0    60   ~ 0
+Text Notes 5800 2050 0    60   ~ 0
 Motor speed control
 Text Notes 8800 1950 0    60   ~ 0
 Nucleo connectors
@@ -1627,4 +1628,133 @@ Text Label 5150 4350 0    30   ~ 0
 ENCODER_X
 Wire Notes Line
 	5500 5100 5500 2100
+$Comp
+L DRV8881 U?
+U 1 1 595E1ABC
+P 7100 2750
+F 0 "U?" H 7100 3225 60  0000 C CNN
+F 1 "DRV8881" H 7100 3100 60  0000 C CNN
+F 2 "" H 7100 2750 60  0001 C CNN
+F 3 "" H 7100 2750 60  0001 C CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 595E2075
+P 6650 2500
+F 0 "#PWR?" H 6650 2250 50  0001 C CNN
+F 1 "GNDD" H 6650 2350 50  0000 C CNN
+F 2 "" H 6650 2500 50  0001 C CNN
+F 3 "" H 6650 2500 50  0001 C CNN
+	1    6650 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 595E228B
+P 7550 2650
+F 0 "#PWR?" H 7550 2400 50  0001 C CNN
+F 1 "GNDD" H 7550 2500 50  0000 C CNN
+F 2 "" H 7550 2650 50  0001 C CNN
+F 3 "" H 7550 2650 50  0001 C CNN
+	1    7550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 595E27CD
+P 8050 3350
+F 0 "C?" H 8075 3450 50  0000 L CNN
+F 1 "22uF" H 8075 3250 50  0000 L CNN
+F 2 "" H 8088 3200 50  0001 C CNN
+F 3 "" H 8050 3350 50  0001 C CNN
+	1    8050 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 8250 2950 1    60   Input ~ 0
+Vbat
+$Comp
+L R R?
+U 1 1 595E2B28
+P 6450 3150
+F 0 "R?" V 6530 3150 50  0000 C CNN
+F 1 "30k" V 6450 3150 50  0000 C CNN
+F 2 "" V 6380 3150 50  0001 C CNN
+F 3 "" H 6450 3150 50  0001 C CNN
+	1    6450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 595E2DB5
+P 6450 3300
+F 0 "#PWR?" H 6450 3050 50  0001 C CNN
+F 1 "GNDD" H 6450 3150 50  0000 C CNN
+F 2 "" H 6450 3300 50  0001 C CNN
+F 3 "" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2950 6450 2950
+Wire Wire Line
+	6450 2950 6450 3000
+Text Label 7550 2800 0    50   ~ 0
+MOTOR+
+Text Label 7550 2500 0    50   ~ 0
+MOTOR-
+$Comp
+L C_Small C?
+U 1 1 595E32FF
+P 7700 3050
+F 0 "C?" H 7710 3120 50  0000 L CNN
+F 1 "100nF cer" H 7710 2970 50  0000 L CNN
+F 2 "" H 7700 3050 50  0001 C CNN
+F 3 "" H 7700 3050 50  0001 C CNN
+	1    7700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 595E3B16
+P 7700 3150
+F 0 "#PWR?" H 7700 2900 50  0001 C CNN
+F 1 "GNDD" H 7700 3000 50  0000 C CNN
+F 2 "" H 7700 3150 50  0001 C CNN
+F 3 "" H 7700 3150 50  0001 C CNN
+	1    7700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 595E3B7B
+P 8050 3500
+F 0 "#PWR?" H 8050 3250 50  0001 C CNN
+F 1 "GNDD" H 8050 3350 50  0000 C CNN
+F 2 "" H 8050 3500 50  0001 C CNN
+F 3 "" H 8050 3500 50  0001 C CNN
+	1    8050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2950 8250 2950
+Connection ~ 7700 2950
+Connection ~ 8050 2950
+Text Label 6650 2800 2    50   ~ 0
+MOTOR_PWM_FORWARD
+Text Label 6650 2650 2    50   ~ 0
+MOTOR_PWM_REVERSE
+Wire Wire Line
+	8050 3200 8050 2950
+Text Notes 6050 3600 0    30   ~ 0
+30k resistor corresponds to 2A current limit
+Wire Notes Line
+	5700 2100 8500 2100
+Wire Notes Line
+	8500 2100 8500 3900
+Wire Notes Line
+	8500 3900 5700 3900
+Wire Notes Line
+	5700 3900 5700 2100
 $EndSCHEMATC
