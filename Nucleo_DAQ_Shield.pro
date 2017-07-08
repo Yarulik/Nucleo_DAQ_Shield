@@ -1,4 +1,4 @@
-update=Wednesday, July 05, 2017 'PMt' 05:55:09 PM
+update=Friday, July 07, 2017 'PMt' 08:02:46 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=DRV8881
+LibName31=NUCLEO_F746ZG
