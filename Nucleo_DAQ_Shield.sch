@@ -101,17 +101,6 @@ F 3 "" H 2150 4800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 7805 U3
-U 1 1 595429B4
-P 3200 1050
-F 0 "U3" H 3350 854 50  0000 C CNN
-F 1 "7805" H 3200 1250 50  0000 C CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 3200 1050 50  0001 C CNN
-F 3 "" H 3200 1050 50  0001 C CNN
-	1    3200 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR01
 U 1 1 59542B17
 P 800 1000
@@ -4104,12 +4093,8 @@ Wire Wire Line
 	4700 1000 4700 1150
 Connection ~ 3800 1000
 Connection ~ 4300 1000
-Wire Wire Line
-	3600 1000 4900 1000
 Connection ~ 2600 1000
 Connection ~ 2100 1000
-Wire Wire Line
-	1900 1000 2800 1000
 Wire Wire Line
 	2200 2900 2600 2900
 Wire Wire Line
@@ -4217,4 +4202,19 @@ Wire Wire Line
 	8800 2700 9000 2700
 Text Notes 2600 600  0    60   ~ 0
 Voltage Regulation
+$Comp
+L LM7805CT U3
+U 1 1 5964BE4D
+P 3200 1050
+F 0 "U3" H 3000 1250 50  0000 C CNN
+F 1 "LM7805CT" H 3200 1250 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 3200 1150 50  0001 C CIN
+F 3 "" H 3200 1050 50  0001 C CNN
+	1    3200 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1000 4900 1000
+Wire Wire Line
+	1900 1000 2800 1000
 $EndSCHEMATC
