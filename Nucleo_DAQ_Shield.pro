@@ -1,4 +1,4 @@
-update=Monday, July 10, 2017 'PMt' 02:43:50 PM
+update=Monday, July 10, 2017 'PMt' 03:15:42 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,13 @@ LibName28=contrib
 LibName29=valves
 LibName30=DRV8881
 LibName31=NUCLEO_F746ZG
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
