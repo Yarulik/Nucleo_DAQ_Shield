@@ -12,7 +12,14 @@
     (nets 112)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title "Nucleo DAQ Shield")
+    (date 2017-07-11)
+    (rev v1.0)
+    (company "Columbia University Creative Machines Lab")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
