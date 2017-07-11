@@ -1,4 +1,4 @@
-update=Tuesday, July 11, 2017 'AMt' 11:00:44 AM
+update=Tuesday, July 11, 2017 'PMt' 02:51:14 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,7 +63,7 @@ LibName31=NUCLEO_F746ZG
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=drawings/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

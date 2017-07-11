@@ -38,7 +38,7 @@ encoding utf-8
 Sheet 1 1
 Title "Nucleo DAQ Shield"
 Date "2017-07-11"
-Rev "v1.0"
+Rev "v1.2"
 Comp "Columbia University - Creative Machines Lab"
 Comment1 ""
 Comment2 ""
@@ -1179,7 +1179,7 @@ $EndComp
 Text GLabel 2000 1000 1    60   Input ~ 0
 Vbat
 Text Notes 5100 800  0    30   ~ 0
-3.3V 300mA regulator
+3.3V 300mA regulator\nSOT-23-5 package
 $Comp
 L GND #PWR019
 U 1 1 595D29FE
@@ -1346,7 +1346,7 @@ U 1 1 595E1ABC
 P 4900 3550
 F 0 "U5" H 4900 4025 60  0000 C CNN
 F 1 "DRV8881" H 4900 3900 60  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4900 3550 60  0001 C CNN
+F 2 "custom:SOIC-8_PowerPad" H 4900 3550 60  0001 C CNN
 F 3 "" H 4900 3550 60  0001 C CNN
 	1    4900 3550
 	1    0    0    -1  
@@ -1632,7 +1632,7 @@ L LM7805CT U3
 U 1 1 5964BE4D
 P 3200 1050
 F 0 "U3" H 3000 1250 50  0000 C CNN
-F 1 "LM7805CT" H 3200 1250 50  0000 L CNN
+F 1 "L78L05" H 3200 1250 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 3200 1150 50  0001 C CIN
 F 3 "" H 3200 1050 50  0001 C CNN
 	1    3200 1050
@@ -2138,4 +2138,6 @@ Connection ~ 6150 5500
 Wire Wire Line
 	5900 5800 5900 5900
 Connection ~ 5900 5900
+Text Notes 2950 800  0    30   ~ 0
+5V LDO regulator 100mA\nTO-92 package
 $EndSCHEMATC
