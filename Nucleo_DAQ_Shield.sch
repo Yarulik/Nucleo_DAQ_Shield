@@ -4309,4 +4309,10 @@ F 3 "" H 5050 4350 50  0001 C CNN
 	1    5050 4350
 	0    -1   -1   0   
 $EndComp
+Text Label 1350 4000 0    30   ~ 0
+5V_CUI_B
+Text Label 1350 4200 0    30   ~ 0
+5V_CUI_A
+Text Label 1350 4300 0    30   ~ 0
+5V_CUI_X
 $EndSCHEMATC
