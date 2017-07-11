@@ -136,12 +136,12 @@ $EndComp
 $Comp
 L CONN_COAXIAL J6
 U 1 1 59542D8D
-P 5050 5900
-F 0 "J6" H 5060 6020 50  0000 C CNN
-F 1 "CONN_COAXIAL" V 5165 5900 50  0000 C CNN
-F 2 "custom:SMA_uxcell" H 5050 5900 50  0001 C CNN
-F 3 "" H 5050 5900 50  0001 C CNN
-	1    5050 5900
+P 4850 5900
+F 0 "J6" H 4860 6020 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 4965 5900 50  0000 C CNN
+F 2 "custom:SMA_uxcell" H 4850 5900 50  0001 C CNN
+F 3 "" H 4850 5900 50  0001 C CNN
+	1    4850 5900
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -215,12 +215,12 @@ GAIN
 $Comp
 L GNDA #PWR010
 U 1 1 59543B89
-P 5050 6100
-F 0 "#PWR010" H 5050 5850 50  0001 C CNN
-F 1 "GNDA" H 5050 5950 50  0000 C CNN
-F 2 "" H 5050 6100 50  0001 C CNN
-F 3 "" H 5050 6100 50  0001 C CNN
-	1    5050 6100
+P 4850 6100
+F 0 "#PWR010" H 4850 5850 50  0001 C CNN
+F 1 "GNDA" H 4850 5950 50  0000 C CNN
+F 2 "" H 4850 6100 50  0001 C CNN
+F 3 "" H 4850 6100 50  0001 C CNN
+	1    4850 6100
 	1    0    0    -1  
 $EndComp
 Text Label 2600 7300 1    60   ~ 0
@@ -1309,17 +1309,6 @@ Motor speed control
 Text Notes 7800 700  0    60   ~ 0
 Nucleo connectors
 $Comp
-L D_Schottky D1
-U 1 1 595D9361
-P 6100 5650
-F 0 "D1" H 6100 5750 50  0000 C CNN
-F 1 "D_Schottky" H 6100 5550 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 6100 5650 50  0001 C CNN
-F 3 "" H 6100 5650 50  0001 C CNN
-	1    6100 5650
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper_NC_Small JP3
 U 1 1 595D9DFC
 P 6400 5500
@@ -1333,19 +1322,19 @@ $EndComp
 $Comp
 L R_Small R1
 U 1 1 595DA3C3
-P 5800 5900
-F 0 "R1" H 5830 5920 50  0000 L CNN
-F 1 "100" H 5830 5860 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" H 5800 5900 50  0001 C CNN
-F 3 "" H 5800 5900 50  0001 C CNN
-	1    5800 5900
+P 5600 5900
+F 0 "R1" H 5630 5920 50  0000 L CNN
+F 1 "100" H 5630 5860 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5600 5900 50  0001 C CNN
+F 3 "" H 5600 5900 50  0001 C CNN
+	1    5600 5900
 	0    1    1    0   
 $EndComp
 Text Notes 5650 5350 0    30   ~ 0
-Jumper enables overvoltage protection\n with the Schottky diode
+Jumper enables overvoltage protection\n with the Schottky diode\nOnly solder one of the diodes shown
 Text Notes 750  2050 0    60   ~ 0
 Motor and encoder interface
-Text Notes 5200 6350 0    30   ~ 0
+Text Notes 5000 6350 0    30   ~ 0
 50 Ohm termination resistor
 Text Notes 1800 3650 0    30   ~ 0
 4050 hex buffer acts as logic level convert (from 5V to 3.3V)
@@ -1770,16 +1759,11 @@ Wire Notes Line
 Wire Notes Line
 	600  5100 600  2100
 Wire Notes Line
-	4800 6500 4800 5200
+	4600 6500 4600 5200
 Wire Wire Line
-	5200 5900 5700 5900
-Connection ~ 6100 5900
+	5000 5900 5500 5900
 Wire Wire Line
-	6100 5800 6100 5900
-Wire Wire Line
-	5900 5900 6500 5900
-Wire Wire Line
-	6100 5500 6300 5500
+	5700 5900 6500 5900
 Connection ~ 6700 5500
 Wire Wire Line
 	6500 5500 6700 5500
@@ -1819,11 +1803,11 @@ Connection ~ 4300 1000
 Connection ~ 2600 1000
 Connection ~ 2100 1000
 Wire Notes Line
-	4800 6500 8200 6500
+	4600 6500 8200 6500
 Wire Notes Line
 	8200 6500 8200 5200
 Wire Notes Line
-	8200 5200 4800 5200
+	8200 5200 4600 5200
 Connection ~ 7200 6000
 Wire Notes Line
 	1100 7900 1100 6600
@@ -1920,19 +1904,8 @@ Wire Notes Line
 $Comp
 L R_Small R6
 U 1 1 59654171
-P 5600 6000
-F 0 "R6" H 5630 6020 50  0000 L CNN
-F 1 "100" H 5630 5960 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" H 5600 6000 50  0001 C CNN
-F 3 "" H 5600 6000 50  0001 C CNN
-	1    5600 6000
-	-1   0    0    1   
-$EndComp
-$Comp
-L R_Small R5
-U 1 1 596541F7
 P 5400 6000
-F 0 "R5" H 5430 6020 50  0000 L CNN
+F 0 "R6" H 5430 6020 50  0000 L CNN
 F 1 "100" H 5430 5960 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" H 5400 6000 50  0001 C CNN
 F 3 "" H 5400 6000 50  0001 C CNN
@@ -1940,29 +1913,40 @@ F 3 "" H 5400 6000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR048
-U 1 1 5965449B
-P 5600 6100
-F 0 "#PWR048" H 5600 5850 50  0001 C CNN
-F 1 "GNDA" H 5600 5950 50  0000 C CNN
-F 2 "" H 5600 6100 50  0001 C CNN
-F 3 "" H 5600 6100 50  0001 C CNN
-	1    5600 6100
-	1    0    0    -1  
+L R_Small R5
+U 1 1 596541F7
+P 5200 6000
+F 0 "R5" H 5230 6020 50  0000 L CNN
+F 1 "100" H 5230 5960 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5200 6000 50  0001 C CNN
+F 3 "" H 5200 6000 50  0001 C CNN
+	1    5200 6000
+	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR049
-U 1 1 59654512
+L GNDA #PWR048
+U 1 1 5965449B
 P 5400 6100
-F 0 "#PWR049" H 5400 5850 50  0001 C CNN
+F 0 "#PWR048" H 5400 5850 50  0001 C CNN
 F 1 "GNDA" H 5400 5950 50  0000 C CNN
 F 2 "" H 5400 6100 50  0001 C CNN
 F 3 "" H 5400 6100 50  0001 C CNN
 	1    5400 6100
 	1    0    0    -1  
 $EndComp
-Connection ~ 5600 5900
+$Comp
+L GNDA #PWR049
+U 1 1 59654512
+P 5200 6100
+F 0 "#PWR049" H 5200 5850 50  0001 C CNN
+F 1 "GNDA" H 5200 5950 50  0000 C CNN
+F 2 "" H 5200 6100 50  0001 C CNN
+F 3 "" H 5200 6100 50  0001 C CNN
+	1    5200 6100
+	1    0    0    -1  
+$EndComp
 Connection ~ 5400 5900
+Connection ~ 5200 5900
 NoConn ~ 6700 1100
 NoConn ~ 6700 1200
 NoConn ~ 6700 1300
@@ -2047,7 +2031,7 @@ NoConn ~ 10200 4000
 NoConn ~ 10200 4100
 NoConn ~ 10200 4200
 NoConn ~ 1100 4000
-Text Notes 5000 5700 0    30   ~ 0
+Text Notes 4800 5700 0    30   ~ 0
 SMA connector
 $Comp
 L +3.3V #PWR050
@@ -2119,4 +2103,39 @@ F 3 "" H 1600 5600 50  0001 C CNN
 	1    1600 5600
 	1    0    0    -1  
 $EndComp
+$Comp
+L D_Schottky_Small D1
+U 1 1 5965AAB6
+P 6150 5700
+F 0 "D1" H 6100 5780 50  0000 L CNN
+F 1 "SD103 SOD-123" H 5870 5620 30  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-123" V 6150 5700 50  0001 C CNN
+F 3 "" V 6150 5700 50  0001 C CNN
+	1    6150 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 5800 6150 5900
+Connection ~ 6150 5900
+Wire Wire Line
+	6150 5600 6150 5500
+Wire Wire Line
+	5900 5500 6300 5500
+$Comp
+L D_Schottky_Small D3
+U 1 1 5965B94C
+P 5900 5700
+F 0 "D3" H 5850 5780 50  0000 L CNN
+F 1 "SD103 DO-35" H 5620 5620 30  0000 L CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5900 5700 50  0001 C CNN
+F 3 "" V 5900 5700 50  0001 C CNN
+	1    5900 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 5600 5900 5500
+Connection ~ 6150 5500
+Wire Wire Line
+	5900 5800 5900 5900
+Connection ~ 5900 5900
 $EndSCHEMATC
