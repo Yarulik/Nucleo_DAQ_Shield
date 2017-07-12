@@ -68,7 +68,7 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0)
-    (pad_to_paste_clearance -0.0762)
+    (pad_to_paste_clearance -0.254)
     (aux_axis_origin 0 0)
     (visible_elements FFFFEF7F)
     (pcbplotparams
@@ -1155,7 +1155,7 @@
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x10_Pitch2.54mm.wrl
       (at (xyz 0.05 -0.45 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 180 90))
     )
   )
 
@@ -1221,7 +1221,7 @@
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x08_Pitch2.54mm.wrl
       (at (xyz 0.05 -0.35 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 180 90))
     )
   )
 
@@ -1315,7 +1315,7 @@
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x15_Pitch2.54mm.wrl
       (at (xyz 0.05 -0.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 180 90))
     )
   )
 
@@ -1417,7 +1417,7 @@
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x17_Pitch2.54mm.wrl
       (at (xyz 0.05 -0.8 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 180 90))
     )
   )
 
