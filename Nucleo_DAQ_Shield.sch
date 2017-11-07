@@ -1548,17 +1548,6 @@ F 3 "" H 7200 650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ST_Nucleo144_F746ZG_CN7 U7
-U 1 1 59646625
-P 9450 1450
-F 0 "U7" H 8850 2125 60  0000 C CNN
-F 1 "ST_Nucleo144_F746ZG_CN7" H 9400 2000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 9350 650 60  0001 C CNN
-F 3 "" H 9350 650 60  0001 C CNN
-	1    9450 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L ST__Nucleo144_F746ZG_CN9 U9
 U 1 1 59646EE4
 P 7300 3300
@@ -1801,8 +1790,6 @@ Text Label 1350 4200 0    30   ~ 0
 Text Label 1350 4300 0    30   ~ 0
 5V_CUI_X
 NoConn ~ 2200 2600
-NoConn ~ 2200 2700
-NoConn ~ 2200 2800
 NoConn ~ 2200 2900
 $Comp
 L R_Small R4
@@ -1906,8 +1893,7 @@ NoConn ~ 10050 1200
 NoConn ~ 10050 1300
 NoConn ~ 10050 1500
 NoConn ~ 10050 1700
-NoConn ~ 10050 1800
-NoConn ~ 10050 1900
+NoConn ~ 9600 5000
 NoConn ~ 10050 2000
 NoConn ~ 6700 2700
 NoConn ~ 6700 2800
@@ -1948,8 +1934,6 @@ NoConn ~ 9000 4000
 NoConn ~ 9000 4100
 NoConn ~ 9000 4200
 NoConn ~ 10200 2600
-NoConn ~ 10200 2700
-NoConn ~ 10200 2800
 NoConn ~ 10200 2900
 NoConn ~ 10200 3000
 NoConn ~ 10200 3100
@@ -2055,17 +2039,6 @@ Wire Wire Line
 Connection ~ 6150 5500
 Text Notes 2950 800  0    30   ~ 0
 5V LDO regulator 100mA\nTO-92 package
-$Comp
-L CONN_01X10 J5
-U 1 1 59E7F53F
-P 9950 5050
-F 0 "J5" H 9950 5600 50  0000 C CNN
-F 1 "CONN_01X10" V 10050 5050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x10_Pitch2.54mm" H 9950 5050 50  0001 C CNN
-F 3 "" H 9950 5050 50  0001 C CNN
-	1    9950 5050
-	-1   0    0    1   
-$EndComp
 $Comp
 L CONN_02X04 J8
 U 1 1 59E82128
@@ -2208,4 +2181,65 @@ F 3 "" H 900 4200 50  0001 C CNN
 	1    900  4200
 	-1   0    0    1   
 $EndComp
+$Comp
+L CONN_01X06 J5
+U 1 1 5A00D711
+P 9400 5250
+F 0 "J5" H 9400 5600 50  0000 C CNN
+F 1 "CONN_01X06" V 9500 5250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 9400 5250 50  0001 C CNN
+F 3 "" H 9400 5250 50  0001 C CNN
+	1    9400 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR062
+U 1 1 5A00DF53
+P 9600 5500
+F 0 "#PWR062" H 9600 5350 50  0001 C CNN
+F 1 "+3.3V" H 9600 5640 50  0000 C CNN
+F 2 "" H 9600 5500 50  0001 C CNN
+F 3 "" H 9600 5500 50  0001 C CNN
+	1    9600 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR063
+U 1 1 5A00E061
+P 9600 5300
+F 0 "#PWR063" H 9600 5050 50  0001 C CNN
+F 1 "GNDD" H 9600 5150 50  0000 C CNN
+F 2 "" H 9600 5300 50  0001 C CNN
+F 3 "" H 9600 5300 50  0001 C CNN
+	1    9600 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ST_Nucleo144_F746ZG_CN7 U7
+U 1 1 59646625
+P 9450 1450
+F 0 "U7" H 8850 2125 60  0000 C CNN
+F 1 "ST_Nucleo144_F746ZG_CN7" H 9400 2000 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 9350 650 60  0001 C CNN
+F 3 "" H 9350 650 60  0001 C CNN
+	1    9450 1450
+	1    0    0    -1  
+$EndComp
+Text Label 10050 1800 0    60   ~ 0
+SDA
+Text Label 9600 5200 0    60   ~ 0
+SDA
+Text Label 10050 1900 0    60   ~ 0
+SCL
+Text Label 9600 5100 0    60   ~ 0
+SCL
+NoConn ~ 9600 5400
+Text Label 2200 2700 0    30   ~ 0
+ENCODERA
+Text Label 2200 2800 0    30   ~ 0
+ENCODERB
+Text Label 10200 2700 0    30   ~ 0
+ENCODERA
+Text Label 10200 2800 0    30   ~ 0
+ENCODERB
 $EndSCHEMATC
