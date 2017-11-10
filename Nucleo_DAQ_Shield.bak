@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Nucleo_DAQ_Shield-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1050,7 +1051,7 @@ U 1 1 595D129E
 P 4300 1300
 F 0 "D2" H 4250 1425 50  0000 L CNN
 F 1 "green" H 4125 1200 50  0000 L CNN
-F 2 "LEDs:LED_D5.0mm" V 4300 1300 50  0001 C CNN
+F 2 "LEDs:LED_1206" V 4300 1300 50  0001 C CNN
 F 3 "" V 4300 1300 50  0001 C CNN
 	1    4300 1300
 	0    -1   -1   0   
@@ -1726,8 +1727,8 @@ NoConn ~ 8900 1600
 NoConn ~ 8900 1700
 NoConn ~ 8900 1800
 NoConn ~ 8900 2000
-NoConn ~ 10050 1100
-NoConn ~ 10050 1200
+NoConn ~ 10050 1800
+NoConn ~ 10050 1900
 NoConn ~ 10050 1300
 NoConn ~ 10050 1500
 NoConn ~ 10050 1700
@@ -2050,11 +2051,11 @@ F 3 "" H 9350 650 60  0001 C CNN
 	1    9450 1450
 	1    0    0    -1  
 $EndComp
-Text Label 10050 1800 0    60   ~ 0
+Text Label 10050 1200 0    60   ~ 0
 SDA
 Text Label 9600 5200 0    60   ~ 0
 SDA
-Text Label 10050 1900 0    60   ~ 0
+Text Label 10050 1100 0    60   ~ 0
 SCL
 Text Label 9600 5100 0    60   ~ 0
 SCL
@@ -2258,7 +2259,7 @@ Wire Wire Line
 NoConn ~ 10050 1600
 NoConn ~ 7900 1600
 $Comp
-L LM1117-5.0 U3
+L LM1117-5.0-RESCUE-Nucleo_DAQ_Shield U3
 U 1 1 5A0609BD
 P 3200 1000
 F 0 "U3" H 3300 750 50  0000 C CNN
