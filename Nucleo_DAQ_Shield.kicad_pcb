@@ -1075,9 +1075,9 @@
     (pad 20 thru_hole oval (at 2.54 22.86) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 31 "Net-(U7-Pad20)"))
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x10_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
+      (at (xyz 0.1 0 -0.05))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
@@ -1141,9 +1141,9 @@
     (pad 16 thru_hole oval (at 2.54 17.78) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 44 "Net-(U8-Pad16)"))
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x08_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
+      (at (xyz 0.1 0 -0.05))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
@@ -1235,9 +1235,9 @@
     (pad 30 thru_hole oval (at 2.54 35.56) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 69 "Net-(U9-Pad30)"))
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x15_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
+      (at (xyz 0.1 0 -0.05))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
@@ -1337,9 +1337,9 @@
     (pad 34 thru_hole oval (at 2.54 40.64) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 96 "Net-(U10-Pad34)"))
     (model Pin_Headers.3dshapes/Pin_Header_Straight_2x17_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
+      (at (xyz 0.1 0 -0.05))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
